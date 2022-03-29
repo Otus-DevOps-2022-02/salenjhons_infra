@@ -1,0 +1,10 @@
+{
+	"folder_id": "b1gu46nj0bmnfamlje4n",
+	"service_account_key_file": "C:/Users/James_Webb/otus_git/key.json",
+	"source_image_family": "ubuntu-1604-lts",
+	"instance_mem_gb" : "2",
+	"disk_size_gb": "8",
+	"instance_name":"salenjhons-instance-{{timestamp}}",
+	"image_name": "my-app-salenjhons-{{timestamp}}",
+	"image_family" : "reddit-full"
+}

@@ -1,0 +1,24 @@
+#!/bin/bash
+[Unit]
+Description=Puma Http Server
+
+Wants=mongod.service
+
+After=network.target
+
+[Service]
+Type=simple
+
+WorkingDirectory=/home/appuser/reddit
+
+ExecStart=/usr/local/bin/puma
+
+User=appuser
+
+Restart=always
+
+[Install]
+WantedBy=multi-user.target
+chmod 644 /etc/systemd/system/puma.service
+systemctl daemon-reload
+systemctl enable puma.service
