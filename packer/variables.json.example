@@ -1,0 +1,6 @@
+{
+    "folder_id": "srgrhsrsjsej434hrejre",
+        "service_account_key_file": "./key.json.example",
+	    "source_image_family": "ubuntu",
+	        "platform_id": "standard-v1"
+		}
