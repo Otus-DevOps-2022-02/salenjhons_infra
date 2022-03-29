@@ -33,7 +33,7 @@
 	},
 	{
             "type": "shell",
-            "script": "files/auto-run.sh",
+            "script": "files/puma.service",
             "execute_command": "sudo {{.Path}}"
         }
     ]
