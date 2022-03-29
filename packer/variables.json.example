@@ -1,6 +1,6 @@
 {
         "folder_id": "11123455",
-        "service_account_key_file": "~/key-test.json",
+	"service_account_key_file": "./key.json.example",
         "source_image_family": "ubuntu-1604-lts",
         "instance_mem_gb" : "2",
         "disk_size_gb": "8",
