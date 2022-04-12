@@ -45,3 +45,11 @@ yc iam key create --service-account-id $ACCT_ID --output <путь до ключ
 
 1.2 Образ reddit-full
 Создана конфигурация для packer создающая образ виртуальной машины с установленными зависимостями и запущенным приложением. Запуск cd packer&&packer build -var-file=variables.json ./immutable.json Файлы variable.json и создать по примеру variable.json.examples. Скрипт создания виртуальной машины config-sripts/create-reddit-vm.sh
+
+
+Home work #6 Знакомство с Terraform
+
+Создан main.tf  в котором сконфигурированы основные параметры для управления YC с помошью терраформа.
+Переменные убраны variables.tf
+Значения в variables.tf
+В lb.tf записана конфигурация балансера.
