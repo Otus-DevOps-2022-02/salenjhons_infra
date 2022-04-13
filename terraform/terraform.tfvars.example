@@ -1,6 +1,6 @@
 cloud_id  = "1111111111111111"
 folder_id = "2222222222222222"
-#zone = "ru-central1-b"
+zone = "ru-central1-b"
 image_id                 = "333333333333333333"
 public_key_path          = "~/.ssh/someone.pub"
 subnet_id                = "11111111111111111"
