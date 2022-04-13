@@ -16,10 +16,10 @@ provider "yandex" {
 
 resource "yandex_compute_instance" "app" {
   count = var.instance_count
-  name = var.instance_name[count.index]
+  name  = var.instance_name[count.index]
   resources {
-    cores  = 2
-    memory = 2
+    cores         = 2
+    memory        = 2
     core_fraction = 30
   }
 
