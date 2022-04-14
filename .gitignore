@@ -1,0 +1,7 @@
+~/otus_git/salenjhons_infra/packer/variables.json
+*.tfstate
+*.tfstate.*.backup
+*.tfstate.backup
+*tfvars
+.terraform/
+C:/Users/James_Webb/otus_git/salenjhons_infra/terraform/key.json
