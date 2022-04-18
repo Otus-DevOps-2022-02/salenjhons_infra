@@ -16,17 +16,17 @@
         {
             "type": "yandex",
             "service_account_key_file": "C:/Users/Alex/otus_git/key.json",
-	    "folder_id": "b1gu46nj0bmnfamlje4n",
+	          "folder_id": "{{user `catalog_id`}}",
             "source_image_family": "ubuntu-1604-lts",
-	    "instance_name":"{{user `instance_name`}}",
-	    "disk_size_gb" : "{{user `disk_size_gb`}}",
-	    "instance_mem_gb" : "{{user `instance_mem_gb`}}",
-	    "image_description" : "{{user `desciption for parametrized image`}}",
-            "platform_id": "standard-v1",
-	    "ssh_username": "ubuntu",
-	    "use_ipv4_nat": "true",
-      "image_name":"{{user `image_name`}}",
-	    "image_family": "reddit-base"
+	          "instance_name":"{{user `instance_name`}}",
+	          "disk_size_gb" : "{{user `disk_size_gb`}}",
+	         "instance_mem_gb" : "{{user `instance_mem_gb`}}",
+	         "image_description" : "{{user `desciption for parametrized image`}}",
+           "platform_id": "standard-v1",
+	         "ssh_username": "ubuntu",
+	         "use_ipv4_nat": "true",
+           "image_name":"reddit-db-base-{{timestamp}}",
+	         "image_family": "reddit-base"
         }
     ],
 
