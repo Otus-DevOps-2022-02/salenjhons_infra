@@ -25,7 +25,7 @@
             "platform_id": "standard-v1",
 	    "ssh_username": "ubuntu",
 	    "use_ipv4_nat": "true",
-	    "image_name": "reddit-db-base-{{timestamo}}"
+      "image_name":"{{user `image_name`}}",
 	    "image_family": "reddit-base"
         }
     ],
