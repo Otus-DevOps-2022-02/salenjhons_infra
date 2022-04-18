@@ -18,17 +18,17 @@
         {
             "type": "yandex",
             "service_account_key_file": "{{user `service_account_key_file`}}",
-	    "instance_name": "{{user `instance_name`}}",
+	          "instance_name": "{{user `instance_name`}}",
             "folder_id": "{{user `catalog_id`}}",
             "source_image_family": "{{user `source_image_family`}}",
-	    "image_name":"reddit-app-base-{{timestamp}}",
-	    "disk_size_gb" : "{{user `disk_size_gb`}}",
-	    "instance_mem_gb" : "{{user `instance_mem_gb`}}",
-	    "image_description" : "{{user `desciption for parametrized image`}}",
+	          "image_name":"reddit-app-base-{{timestamp}}",
+	          "disk_size_gb" : "{{user `disk_size_gb`}}",
+	          "instance_mem_gb" : "{{user `instance_mem_gb`}}",
+	          "image_description" : "{{user `desciption for parametrized image`}}",
             "platform_id": "standard-v1",
-	    "ssh_username": "ubuntu",
-	    "use_ipv4_nat": "true",
-	    "image_family": "reddit-base"
+	          "ssh_username": "ubuntu",
+	          "use_ipv4_nat": "true",
+	          "image_family": "reddit-base"
         }
     ],
 
