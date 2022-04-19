@@ -3,8 +3,8 @@
         {
             "type": "yandex",
             "service_account_key_file": "{{user `service_account_key_file`}}",
-            "folder_id": "{{user `folder_id`}}",
-            "source_image_family": "{{user `source_image_family`}}",
+            "folder_id": "b1gu46nj0bmnfamlje4n",
+            "source_image_family": "ubuntu-1604-lts",
 	    "instance_name":"{{user `instance_name`}}",
 	    "disk_size_gb" : "{{user `disk_size_gb`}}",
 	    "instance_mem_gb" : "{{user `instance_mem_gb`}}",

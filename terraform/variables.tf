@@ -1,42 +1,23 @@
-variable "cloud_id" {
-  description = "Cloud"
-  type        = string
+variable cloud_id {
+description = "Cloud"
 }
 
-variable "folder_id" {
-  description = "Folder"
-}
-variable zone {
-  description = "Zone"
-  default     = "ru-central1-b"
-}
-variable public_key_path {
-  description = "Public key path"
+variable folder_id {
+description = "Folder"
 }
 
-variable private_key_path {
-  description = "Private key path"
-}
-
-variable image_id {
-  description = "Disk image"
-}
-variable subnet_id {
-  description = "Subnet"
-}
 variable service_account_key_file {
-  description = "key.json"
+description = "Service key file"
 }
 
-variable network_id {
-  description = "network id"
+variable zone {
+description = "Zone"
 }
 
-variable instance_name {
-  description = "Name of instance"
-  default     = "app-reddit"
+variable access_key {
+  description = "Acces key"
 }
 
-variable instance_count {
-  default = 1
+variable secret_key {
+  description = "Secret key"
 }
