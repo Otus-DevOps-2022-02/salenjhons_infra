@@ -1,0 +1,13 @@
+{
+  "app":
+   "hosts":[
+     "appserver":
+      "ansible_host": "51.250.101.247"
+   ],
+   "db":
+    "hosts":[
+      "dbserver":
+       "ansible_host": "51.250.111.79"
+    ]
+
+}
