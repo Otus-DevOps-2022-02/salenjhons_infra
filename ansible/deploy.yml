@@ -1,8 +1,17 @@
 - name: Deploy App
   hosts: app
+
   handlers:
     - name: restart puma
       systemd: name=puma state=restarted
+
+    - name: Install GIT
+      become: true
+      apt:
+        name: git
+        update_cache: yes
+        state: present
+
 
     - name: Fetch the latest version of application code
       become: true
@@ -16,4 +25,5 @@
       bundler:
         state: present
       environment:
+        GEM_HOME: /home/ubuntu/reddit
         PATH: $PATH:/bin/:/usr/bin/:/home/ubuntu/reddit

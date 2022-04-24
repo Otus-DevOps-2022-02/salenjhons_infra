@@ -1,6 +1,6 @@
 ---
  - name: Install & configure mongodb
-   hosts: db
+   hosts: all
    become: true
    tasks:
     - name: Install aptitude using apt
