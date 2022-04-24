@@ -1,8 +1,11 @@
 - name: Deploy App
   hosts: app
-  tags: deploy-tag
-  tasks:
+  handlers:
+    - name: restart puma
+      systemd: name=puma state=restarted
+
     - name: Fetch the latest version of application code
+      become: true
       git:
          repo: 'https://github.com/express42/reddit.git'
          dest: /home/ubuntu/reddit
@@ -12,9 +15,6 @@
     - name: bundle install
       bundler:
         state: present
-        chdir: /home/ubuntu/reddit
-
-  handlers:
-    - name: restart puma
-      become: true
-      systemd: name=puma state=restarted
+      environment:
+        GEM_HOME: /home/ubuntu/reddit
+        PATH: $PATH:/bin/:/usr/bin/:/home/ubuntu/reddit

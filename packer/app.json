@@ -2,7 +2,7 @@
     "variables":{
 
 
-	    "service_account_key_file": "C:/Users/Alex/otus_git/key.json",
+	    "service_account_key_file": "/home/salenjhons/otus_git/key.json",
 	    "source_image_family": "ubuntu-1604-lts",
 	    "instance_mem_gb" : "2",
 	    "disk_size_gb": "8",
@@ -35,7 +35,7 @@
     "provisioners": [
         {
             "type": "ansible",
-            "playbook_file": "ansible/packer_app.yml"
+            "playbook_file": "/home/salenjhons/otus_git/salenjhons_infra/ansible/packer_app.yml"
         }
     ]
 

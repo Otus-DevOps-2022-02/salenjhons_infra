@@ -3,7 +3,11 @@
   tags: app-tag
   become: true
   vars:
-   db_host: 10.132.0.2
+   db_host: 10.129.0.23
+
+  handlers:
+    - name: reload puma
+      service: name=puma state=restartedf
 
   tasks:
     - name: Add unit file for Puma
