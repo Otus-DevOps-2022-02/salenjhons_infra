@@ -5,7 +5,7 @@
           "type": "yandex",
           "service_account_key_file": "{{user `service_account_key_file`}}",
           "instance_name": "{{user `instance_name`}}",
-          "folder_id": "{{user `catalog_id`}}",
+          "folder_id": "12345",
           "source_image_family": "{{user `source_image_family`}}",
           "image_name":"reddit-app-base-{{timestamp}}",
           "disk_size_gb" : "{{user `disk_size_gb`}}",
