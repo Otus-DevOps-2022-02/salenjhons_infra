@@ -16,5 +16,4 @@
       bundler:
         state: present
       environment:
-        GEM_HOME: /home/ubuntu/reddit
         PATH: $PATH:/bin/:/usr/bin/:/home/ubuntu/reddit

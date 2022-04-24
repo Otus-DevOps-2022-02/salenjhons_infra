@@ -1,20 +1,5 @@
 {
 
-  "variables":{
-
-
-    "service_account_key_file": "/home/salenjhons/otus_git/key.json",
-    "source_image_family": "ubuntu-1604-lts",
-    "instance_mem_gb" : "2",
-    "disk_size_gb": "8",
-    "instance_name":"reddit-app-base-{{timestamp}}",
-    "image_name": "reddit-app-base-{{timestamp}}",
-    "image_family" : "reddit-base",
-    "catalog_id": "b1gu46nj0bmnfamlje4n"
-
-
-  },
-
   "builders": [
       {
           "type": "yandex",
