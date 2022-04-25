@@ -7,7 +7,6 @@
     mongo_bind_ip: 0.0.0.0
   tasks:
     - name: Change mongo config file
-      become: true
       template:
         src: templates/mongod.conf.j2
         dest: /etc/mongod.conf
@@ -22,7 +21,6 @@
 - name: Configure hosts & deploy application
   hosts: app
   tags: app-tag
-  become: true
   vars:
    db_host: 10.132.0.2
 
@@ -61,5 +59,4 @@
 
   handlers:
     - name: restart puma
-       become: true
-       systemd: name=puma state=restarted
+      systemd: name=puma state=restarted

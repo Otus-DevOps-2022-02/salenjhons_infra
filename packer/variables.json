@@ -1,6 +1,6 @@
 {
 
-	"service_account_key_file": "C:/Users/Alex/otus_git/key.json",
+	"service_account_key_file": "home/otus_git/salenjhons_infra/packer/key.json",
 	"source_image_family": "ubuntu-1604-lts",
 	"instance_mem_gb" : "2",
 	"disk_size_gb": "8",
