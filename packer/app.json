@@ -1,25 +1,12 @@
 {
-    "variables":{
 
-
-	    "service_account_key_file": "C:/Users/Alex/otus_git/key.json",
-	    "source_image_family": "ubuntu-1604-lts",
-	    "instance_mem_gb" : "2",
-	    "disk_size_gb": "8",
-	    "instance_name":"reddit-app-base-{{timestamp}}",
-	    "image_name": "reddit-app-base-{{timestamp}}",
-	    "image_family" : "reddit-base",
-	    "catalog_id": "b1gu46nj0bmnfamlje4n"
-
-
-    },
 
     "builders": [
         {
             "type": "yandex",
             "service_account_key_file": "{{user `service_account_key_file`}}",
 	          "instance_name": "{{user `instance_name`}}",
-            "folder_id": "{{user `catalog_id`}}",
+            "folder_id": "12345",
             "source_image_family": "{{user `source_image_family`}}",
 	          "image_name":"reddit-app-base-{{timestamp}}",
 	          "disk_size_gb" : "{{user `disk_size_gb`}}",
@@ -34,19 +21,8 @@
 
     "provisioners": [
         {
-            "type": "shell",
-            "script": "scripts/install_ruby.sh",
-            "execute_command": "sudo {{.Path}}"
-        },
-        {
-            "type": "file",
-            "source": "files/puma.service",
-            "destination": "/tmp/puma.service"
-        },
-        {
-            "type": "shell",
-            "script": "files/deploy.sh",
-            "execute_command": "sudo {{.Path}}"
+            "type": "ansible",
+            "playbook_file": "ansible/packer_app.yml"
         }
     ]
 
