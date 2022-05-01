@@ -9,7 +9,7 @@
         state: latest
         update_cache: yes
 
-    - name: Inport public key
+    - name: Import public key
       apt_key:
         url: 'https://www.mongodb.org/static/pgp/server-4.2.asc'
         state: present

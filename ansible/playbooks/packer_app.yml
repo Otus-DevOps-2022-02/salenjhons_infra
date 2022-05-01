@@ -3,8 +3,11 @@
   hosts: all
   become: true
   tasks:
-    - name: Install ruby & rubygems and required packages
-      apt: "{{ item }} state=present"
+    - name: Install ruby & required packages
+      apt:
+        name: "{{ item }}"
+        state: present
+        update_cache: yes
       with_items:
         - ruby-full
         - ruby-bundler

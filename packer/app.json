@@ -1,17 +1,24 @@
 {
 
+    "variables":{
+
+
+            "service_account_key_file": "./key.json",
+            "folder_id": "b1gu46nj0bmnfamlje4n"
+
+
+        },
 
     "builders": [
         {
             "type": "yandex",
             "service_account_key_file": "{{user `service_account_key_file`}}",
-	          "instance_name": "{{user `instance_name`}}",
-            "folder_id": "12345",
-            "source_image_family": "{{user `source_image_family`}}",
+	          "instance_name": "reddit-app-base-{{timestamp}}",
+            "folder_id": "{{user `folder_id`}}",
+            "source_image_family": "ubuntu-1604-lts",
 	          "image_name":"reddit-app-base-{{timestamp}}",
-	          "disk_size_gb" : "{{user `disk_size_gb`}}",
-	          "instance_mem_gb" : "{{user `instance_mem_gb`}}",
-	          "image_description" : "{{user `desciption for parametrized image`}}",
+	          "disk_size_gb" : "8",
+	          "instance_mem_gb" : "2",
             "platform_id": "standard-v1",
 	          "ssh_username": "ubuntu",
 	          "use_ipv4_nat": "true",
@@ -22,7 +29,7 @@
     "provisioners": [
         {
             "type": "ansible",
-            "playbook_file": "ansible/packer_app.yml"
+            "playbook_file": "/home/salenjhons/otus_git/salenjhons_infra/ansible/playbooks/packer_app.yml"
         }
     ]
 
