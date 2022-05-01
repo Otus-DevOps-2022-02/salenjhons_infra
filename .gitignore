@@ -4,4 +4,6 @@
 *.tfstate.backup
 *tfvars
 .terraform/
-C:/Users/James_Webb/otus_git/salenjhons_infra/terraform/key.json
+/jdauphant.nginx/
+*key.json
+~/otus_git/salenjhons_infra/ansible/vault.key
