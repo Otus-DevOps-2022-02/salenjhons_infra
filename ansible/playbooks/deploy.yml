@@ -1,6 +1,5 @@
 - name: Deploy App
   hosts: app
-
   handlers:
     - name: restart puma
       become: true
