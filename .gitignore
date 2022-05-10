@@ -13,3 +13,4 @@
 .molecule
 .cache
 .pytest_cache
+Vagrant & molecule
