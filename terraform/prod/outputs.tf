@@ -10,6 +10,13 @@ output "external_ip_address_db" {
   value = module.db.external_id_address_db
 }
 
+output "internal_ip_address_app" {
+  value = module.app.internal_ip_address_app
+}
+output "internal_ip_address_db" {
+  value = module.db.internal_ip_address_db
+}
+
 #output "external_ip_address_app_lb" {
 # value = yandex_alb_load_balancer.app-balancer.listener.0.endpoint.0.address.0.external_ipv4_address
 #}
