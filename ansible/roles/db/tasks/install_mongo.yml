@@ -30,6 +30,6 @@
  - name: Enabled mongod  to start automaticaly
    service:
      name: mongod
-     enabled: yes
      state: started
+     enabled: yes
    tags: install
