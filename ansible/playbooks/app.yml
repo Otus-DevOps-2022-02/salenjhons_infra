@@ -2,6 +2,7 @@
 - name: Configuration app
   hosts: app
   become: true
+
   roles:
     - app
     - jdauphant.nginx
