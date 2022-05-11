@@ -2,7 +2,7 @@
  - name: Install aptitude using apt
    apt:
      name: aptitude
-     state: latest
+     state: present
      update_cache: yes
    tags: install
 
