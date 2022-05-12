@@ -1,3 +1,31 @@
+
+Homework #10 (Ansible-4).
+
+1.Устанавливаем Vagrant
+2.Описываем локальную инфраструктуру в Vagrantfile
+3.Дорабатываем роли и учимся использовать provisioner
+4.Переделываем deploy.yml
+5.Проверяем сборку в Vagrant
+6.Устанавливаем pip, а затем с помощью его virtualenv
+7.Устанавливаем все необходимые пакеты pip install -r requirements.txt
+8.Создаем заготовку molecule с помощью команды molecule init scenario --scenario-name default -r db -d vagrant
+9.Добавляем собственнные тесты
+10.Тестируем конфигурацию
+
+Homework #9 (Ansible-3).
+
+1.Создаем ветку ansible-3
+2.С помощью ansible-galaxy создаем заготовки полроли
+3.Переводим наши плейбуки в роли
+4.Модифицируем плейбуки на запуск ролей
+5.Проверяем фунцкионал ролей
+6.Модифицируем ansible.cfg и вводим переменные окружения для сред prod и stage
+7.Организуем плейбуки согласно Best Practices
+8.Используем community роли на примере jdauphant.nginx
+9.Учимся использовать ansible-vault
+10.Проверяем функционал
+
+
 Homework #9
 
 Занятие 11. Ansible: Templates, handlers, dynamic inventory, vault, tags
@@ -19,8 +47,6 @@ Homework #9
 вместо command и shell использованы ansible-модули apt, apt_key, apt_repository, systemd
 сгенерированы образы на основе измененных шаблонов
 проверена работаспособность инфраструктуры, разворачиваемой на хосты, созданные из новых образов/
-
-
 
 Homework #8 Управление конфигурацией. Основные DevOps инструменты. Знакомство с Ansible
 

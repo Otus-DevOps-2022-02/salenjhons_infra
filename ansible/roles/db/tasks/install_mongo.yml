@@ -1,0 +1,35 @@
+---
+ - name: Install aptitude using apt
+   apt:
+     name: aptitude
+     state: present
+     update_cache: yes
+   tags: install
+
+ - name: Import public key
+   apt_key:
+     url: 'https://www.mongodb.org/static/pgp/server-4.2.asc'
+     state: present
+   tags: install
+
+ - name: Add repository
+   apt_repository:
+     filename: '/etc/apt/sources.list.d/mongodb-org-4.2.list'
+     repo: 'deb [ arch=amd64,arm64 ] https://repo.mongodb.org/apt/ubuntu xenial/mongodb-org/4.2 multiverse'
+     state: present
+     update_cache: yes
+   tags: install
+
+ - name: Install mongodb
+   apt:
+     name: mongodb-org
+     state: present
+     update_cache: yes
+   tags: install
+
+ - name: Enabled mongod  to start automaticaly
+   service:
+     name: mongod
+     state: started
+     enabled: yes
+   tags: install

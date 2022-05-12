@@ -1,0 +1,14 @@
+---
+dependency:
+  name: galaxy
+driver:
+  name: vagrant
+provider:
+  name: virtualbox
+platforms:
+  - name: instance
+    box: ubuntu-vmbox
+provisioner:
+  name: ansible
+  lint:
+    name: ansible-lint
